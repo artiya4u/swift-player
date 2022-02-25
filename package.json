@@ -2,13 +2,9 @@
   "name": "swift-player",
   "version": "1.0.0",
   "scripts": {
-    "go": "react-native start",
-    "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "android-run": "react-native run-android",
-    "ios": "expo run:ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
   },
   "dependencies": {
     "expo": "~44.0.0",

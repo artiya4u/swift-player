@@ -9,6 +9,7 @@ import {
   Image,
 } from 'react-native';
 import {Video} from 'expo-av';
+import {StatusBar} from "expo-status-bar";
 
 const {height, width} = Dimensions.get('window');
 
@@ -20,6 +21,13 @@ const viewabilityConfig = {
 };
 
 const initialItems = [
+  {
+    id: 2,
+    url:
+      'https://storage.googleapis.com/hls-vid/uQHLJoXXjL8/playlist.m3u8',
+    poster:
+      'https://i.ytimg.com/vi/uQHLJoXXjL8/maxresdefault.jpg',
+  },
   {
     id: 0,
     url:
@@ -33,13 +41,6 @@ const initialItems = [
       'https://storage.googleapis.com/hls-vid/KRntP-q_R9s/playlist.m3u8',
     poster:
       'https://i.ytimg.com/vi/KRntP-q_R9s/maxresdefault.jpg',
-  },
-  {
-    id: 2,
-    url:
-      'https://storage.googleapis.com/hls-vid/uQHLJoXXjL8/playlist.m3u8',
-    poster:
-      'https://i.ytimg.com/vi/uQHLJoXXjL8/maxresdefault.jpg',
   },
   {
     id: 3,
@@ -187,6 +188,7 @@ export default class App extends React.PureComponent {
             </TouchableOpacity>
           }
         />
+        <StatusBar style="light" hidden={true}/>
       </View>
     );
   }
