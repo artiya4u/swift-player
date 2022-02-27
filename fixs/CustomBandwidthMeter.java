@@ -70,7 +70,7 @@ public final class CustomBandwidthMeter implements BandwidthMeter, TransferListe
      * Default initial bitrate estimate used when the device is offline or the network type cannot be
      * determined, in bits per second.
      */
-    public static final long DEFAULT_INITIAL_BITRATE_ESTIMATE = 10_000_000; // default: 1_000_000
+    public static final long DEFAULT_INITIAL_BITRATE_ESTIMATE = 1_500_000; // default: 1_000_000
 
     /** Default maximum weight for the sliding window. */
     public static final int DEFAULT_SLIDING_WINDOW_MAX_WEIGHT = 2000;
